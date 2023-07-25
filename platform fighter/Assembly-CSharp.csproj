@@ -39,39 +39,40 @@
      <Compile Include="Assets\playertest.cs" />
      <Compile Include="Assets\groundcheck.cs" />
      <Compile Include="Assets\move.cs" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <Compile Include="Assets\RoomPlayer.cs" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\ScriptTemplates\51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\ScriptTemplates\56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\_package\Mirror\Version.txt" />
      <None Include="Assets\_package\Mirror\Readme.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\ScriptTemplates\57-Mirror__Network Transform-NewNetworkTransform.cs.txt" />
-     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\_package\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\_package\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\ScriptTemplates\52-Mirror__Network Behaviour-NewNetworkBehaviour.cs.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\_package\Mirror\Notice.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\_package\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\_package\Mirror\Plugins\Mono.Cecil\License.txt" />
      <None Include="Assets\ScriptTemplates\55-Mirror__Network Room Player-NewNetworkRoomPlayer.cs.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\ScriptTemplates\53-Mirror__Custom Interest Management-CustomInterestManagement.cs.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\ScriptTemplates\50-Mirror__Network Manager-NewNetworkManager.cs.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\ScriptTemplates\54-Mirror__Network Room Manager-NewNetworkRoomManager.cs.txt" />
-     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\_package\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity 2021.3.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -316,37 +317,37 @@
         <HintPath>C:\Program Files\Unity 2021.3.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Rocks">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Assets\_package\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Assets\_package\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Pdb">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Assets\_package\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Assets\_package\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.Unsafe.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Assets\_package\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Assets\_package\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.burst@1.6.5\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Assets\_package\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Assets\_package\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity 2021.3.4f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -715,124 +716,124 @@
         <HintPath>C:\Program Files\Unity 2021.3.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.IK.Runtime">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Environments">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-        <HintPath>C:\Users\chan1688\OneDrive - St Andrews Christian College\Documents\GitHub\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
