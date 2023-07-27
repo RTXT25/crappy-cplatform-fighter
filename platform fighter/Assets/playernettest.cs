@@ -55,7 +55,6 @@ public class playernettest : NetworkBehaviour
             verticalVelocity = jumpForce;
             isJumping = true;
             jumpsLeft--;
-            CmdPerformJump();
         }
 
         // Continuous jump while the jump button is held
@@ -76,33 +75,11 @@ public class playernettest : NetworkBehaviour
             verticalVelocity -= fallMult * normalFall * Time.deltaTime;
         }
 
-        CmdUpdateMovement(verticalVelocity);
     }
-
-    [Command]
-    void CmdPerformJump()
-    {
-        RpcJump();
-    }
-
-    [ClientRpc]
-    void RpcJump()
-    {
-        // Client-side jump handling (if required)
-    }
-
-    [Command]
-    void CmdUpdateMovement(float verticalVel)
-    {
-        RpcUpdateMovement(verticalVel);
-    }
-
-    [ClientRpc]
-    void RpcUpdateMovement(float verticalVel)
+    void FixedUpdate()
     {
         if (!isLocalPlayer)
         {
-            verticalVelocity = verticalVel;
             Vector3 moveDirection = new Vector3(Input.GetAxisRaw("Horizontal") * Time.deltaTime * moveSpeed, verticalVelocity * Time.deltaTime, 0);
             controller.Move(moveDirection);
         }
