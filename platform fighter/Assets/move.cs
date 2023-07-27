@@ -9,6 +9,7 @@ public class move : MonoBehaviour{
     public float normalFall = 5f;
     public float fallMult = 2.5f;
     static public int maxJumps = 2;
+    bool initiatedJump = false;
     CharacterController controller;
     bool inFastFall;
     static public bool isGround;
@@ -28,30 +29,58 @@ public class move : MonoBehaviour{
         jumpsLeft = maxJumps;
     }
     void Update(){
+        // Ground check
         isGround = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-        if (isGround && verticalVelocity < 0){
+
+        // Jump input detection
+        if (isGround && verticalVelocity < 0)
+        {
+            // Reset jumps when grounded
             jumpsLeft = maxJumps;
-            verticalVelocity = -2f; 
+            verticalVelocity = -2f; // To keep the player slightly grounded
+            isJumping = false; // Reset the jump flag when grounded
         }
 
-       if (Input.GetKeyDown(KeyCode.Space) && jumpsLeft > 0){
+        if (Input.GetKeyDown(KeyCode.Space) && jumpsLeft > 0)
+        {
+            // Perform initial jump
             verticalVelocity = jumpForce;
             isJumping = true;
+            initiatedJump = true; // Set the flag to true when the player initiates the jump
             jumpsLeft--;
         }
-        if (isJumping && Input.GetKey(KeyCode.Space)){
+
+        // Continuous jump while the jump button is held
+        if (isJumping && Input.GetKey(KeyCode.Space))
+        {
             verticalVelocity += jumpHoldForce * Time.deltaTime;
         }
-        if (!isGround) {
+
+        // If the player leaves the ground without jumping, remove a jump
+        if (!isJumping && !initiatedJump)
+        {
+            initiatedJump = false; // Reset the flag for the next jump attempt
+            if (jumpsLeft < maxJumps)
+            {
+                jumpsLeft++;
+            }
+        }
+
+        // Apply gravity
+        if (!isGround)
+        {
             verticalVelocity -= normalFall * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.DownArrow)){
+
+        // Fast Fall mechanic
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
             verticalVelocity -= fallMult * normalFall * Time.deltaTime;
         }
     }
 
-    void FixedUpdate()
-    {
+
+    void FixedUpdate(){
         float wantX = Input.GetAxisRaw("Horizontal") * Time.fixedDeltaTime * moveSpeed;
         float wantY = verticalVelocity * Time.fixedDeltaTime;
 

@@ -36,10 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\RoomPlayer.cs" />
-     <Compile Include="Assets\playertest.cs" />
-     <Compile Include="Assets\groundcheck.cs" />
      <Compile Include="Assets\move.cs" />
+     <Compile Include="Assets\playernettest.cs" />
      <None Include="Assets\_package\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\ScriptTemplates\51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" />
