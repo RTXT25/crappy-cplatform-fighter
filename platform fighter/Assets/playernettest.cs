@@ -50,6 +50,7 @@ public class playernettest : NetworkBehaviour{
         if (Input.GetKey(KeyCode.DownArrow)){
             verticalVelocity -= fallMult * normalFall * Time.deltaTime;
         }
+<<<<<<< HEAD
     }
 
     void FixedUpdate(){
@@ -58,6 +59,15 @@ public class playernettest : NetworkBehaviour{
             float wantY = verticalVelocity * Time.fixedDeltaTime;
 
             Vector3 moveDirection = new Vector3(wantX, wantY, 0);
+=======
+
+    }
+    void FixedUpdate()
+    {
+        if (!isLocalPlayer)
+        {
+            Vector3 moveDirection = new Vector3(Input.GetAxisRaw("Horizontal") * Time.deltaTime * moveSpeed, verticalVelocity * Time.deltaTime, 0);
+>>>>>>> 3cbc621110955b8a33c02ff8cbd7034295663fdc
             controller.Move(moveDirection);
     }
 }
