@@ -3,20 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 
-public class playernettest : NetworkBehaviour
-{
+public class playernettest : NetworkBehaviour{
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
     public float jumpHoldForce = 2.5f;
     public float normalFall = 5f;
     public float fallMult = 2.5f;
-    public int maxJumps = 2;
-
+    static public int maxJumps = 2;
     CharacterController controller;
-    [SerializeField] bool isGround;
-    int jumpsLeft;
-
-    // For detecting ground, you can use a simple transform at the player's feet
+    bool inFastFall;
+    static public bool isGround;
+    static public int jumpsLeft;
     public Transform groundCheck;
     public LayerMask groundMask;
     public float groundDistance = 0.2f;
@@ -25,86 +22,42 @@ public class playernettest : NetworkBehaviour
     bool isJumping = false;
     float verticalVelocity = 0f;
 
-    void Awake()
-    {
+    void Awake(){
         controller = GetComponent<CharacterController>();
     }
-
-    public override void OnStartLocalPlayer()
-    {
-        base.OnStartLocalPlayer();
+    void Start(){
         jumpsLeft = maxJumps;
     }
-
-    void Update()
-    {
-        if (!isLocalPlayer) return;
-
-        // Ground check
+    void Update(){
+        if(!isLocalPlayer) return;
         isGround = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-
-        // Jump input detection
-        if (isGround && verticalVelocity < 0)
-        {
+        if (isGround && verticalVelocity < 0){
             jumpsLeft = maxJumps;
-            verticalVelocity = -2f; // To keep the player slightly grounded
+            verticalVelocity = -2f; 
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && jumpsLeft > 0)
-        {
+       if (Input.GetKeyDown(KeyCode.Space) && jumpsLeft > 0){
             verticalVelocity = jumpForce;
             isJumping = true;
             jumpsLeft--;
-            CmdPerformJump();
         }
-
-        // Continuous jump while the jump button is held
-        if (isJumping && Input.GetKey(KeyCode.Space))
-        {
+        if (isJumping && Input.GetKey(KeyCode.Space)){
             verticalVelocity += jumpHoldForce * Time.deltaTime;
         }
-
-        // Apply gravity
-        if (!isGround)
-        {
+        if (!isGround) {
             verticalVelocity -= normalFall * Time.deltaTime;
         }
-
-        // Fast Fall mechanic
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
+        if (Input.GetKey(KeyCode.DownArrow)){
             verticalVelocity -= fallMult * normalFall * Time.deltaTime;
         }
-
-        CmdUpdateMovement(verticalVelocity);
     }
 
-    [Command]
-    void CmdPerformJump()
-    {
-        RpcJump();
-    }
+    void FixedUpdate(){
+        if(!isLocalPlayer) return;
+            float wantX = Input.GetAxisRaw("Horizontal") * Time.fixedDeltaTime * moveSpeed;
+            float wantY = verticalVelocity * Time.fixedDeltaTime;
 
-    [ClientRpc]
-    void RpcJump()
-    {
-        // Client-side jump handling (if required)
-    }
-
-    [Command]
-    void CmdUpdateMovement(float verticalVel)
-    {
-        RpcUpdateMovement(verticalVel);
-    }
-
-    [ClientRpc]
-    void RpcUpdateMovement(float verticalVel)
-    {
-        if (!isLocalPlayer)
-        {
-            verticalVelocity = verticalVel;
-            Vector3 moveDirection = new Vector3(Input.GetAxisRaw("Horizontal") * Time.deltaTime * moveSpeed, verticalVelocity * Time.deltaTime, 0);
+            Vector3 moveDirection = new Vector3(wantX, wantY, 0);
             controller.Move(moveDirection);
-        }
     }
 }
