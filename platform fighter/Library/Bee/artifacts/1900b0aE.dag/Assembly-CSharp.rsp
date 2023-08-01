@@ -343,6 +343,8 @@
 -r:"C:/Users/skool/Documents/GitHub/EPIC/crappy-cplatform-fighter/platform fighter/Library/PackageCache/com.unity.burst@1.6.5/Unity.Burst.Unsafe.dll"
 -r:"C:/Users/skool/Documents/GitHub/EPIC/crappy-cplatform-fighter/platform fighter/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 -r:"C:/Users/skool/Documents/GitHub/EPIC/crappy-cplatform-fighter/platform fighter/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Cinemachine.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/kcp2k.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Mirror.Authenticators.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Mirror.CompilerSymbols.ref.dll"
@@ -397,6 +399,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/green.cs"
+"Assets/HubController.cs"
 "Assets/move.cs"
 "Assets/playernettest.cs"
 -langversion:9.0

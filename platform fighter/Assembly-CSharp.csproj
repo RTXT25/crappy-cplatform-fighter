@@ -38,6 +38,8 @@
   <ItemGroup>
      <Compile Include="Assets\playernettest.cs" />
      <Compile Include="Assets\move.cs" />
+     <Compile Include="Assets\HubController.cs" />
+     <Compile Include="Assets\green.cs" />
      <None Include="Assets\_package\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\_package\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\ScriptTemplates\51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" />
@@ -832,6 +834,12 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
         <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>C:\Users\skool\Documents\GitHub\EPIC\crappy-cplatform-fighter\platform fighter\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
