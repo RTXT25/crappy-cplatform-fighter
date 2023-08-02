@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class move : MonoBehaviour{
-    public float moveSpeed = 5f;
+    public float moveSpeed = 5f; 
     public float jumpForce = 5f;
     public float jumpHoldForce = 2.5f;
     public float normalFall = 5f;
