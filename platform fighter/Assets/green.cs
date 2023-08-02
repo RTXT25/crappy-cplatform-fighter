@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class green : MonoBehaviour{
-    void OnTriggerEnter(Collider other) {
+    void OnTriggerStay(Collider other) {
         if(other.gameObject.CompareTag("Player")){
-            Debug.Log("ass");
+            HubController.popupteston = true;
+        }
+    }
+    void OnTriggerExit(Collider other) {
+        if(other.gameObject.CompareTag("Player")){
+            HubController.popupteston = false;
         }
     }
 }

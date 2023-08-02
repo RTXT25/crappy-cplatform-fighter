@@ -7,7 +7,7 @@ public class playernettest : NetworkBehaviour{
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
     public float jumpHoldForce = 2.5f;
-    public float normalFall = 5f;
+    public float normalFall = 5f; 
     public float fallMult = 2.5f;
     static public int maxJumps = 2;
     CharacterController controller;
