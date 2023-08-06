@@ -7,9 +7,13 @@ public class HubController : MonoBehaviour{
     public GameObject popuptest;
     public static bool exitmenuon = false;
     public GameObject exitmenu;
+    public static bool hubmenuon = false;
+    public GameObject hubmenu;
     void Update(){
         if(Input.GetKey(KeyCode.Escape)){
-            Debug.Log("ass");
+            hubmenu.SetActive(true);
+        }else{
+            hubmenu.SetActive(false);
         }
         if(popupteston){
             popuptest.SetActive(true);

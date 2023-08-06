@@ -12,7 +12,7 @@ public class move : MonoBehaviour{
     bool initiatedJump = false;
     CharacterController controller;
     bool inFastFall;
-    static public bool isGround;
+    static public bool isGround; 
     static public int jumpsLeft;
     public Transform groundCheck;
     public LayerMask groundMask;
